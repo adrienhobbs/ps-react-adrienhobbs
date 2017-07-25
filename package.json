@@ -43,6 +43,7 @@
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.3"
   },
+  "homepage": "http://adrienhobbs.github.io/ps-react-adrienhobbs/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
@@ -50,7 +51,9 @@
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy:docs": "npm run build:docs",
+    "deploy:docs": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -96,6 +99,7 @@
     "chalk": "^1.1.3",
     "chokidar": "^1.6.1",
     "enzyme": "2.8.2",
+    "gh-pages": "0.12.0",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.5.10",
     "react-addons-test-utils": "15.5.1",
