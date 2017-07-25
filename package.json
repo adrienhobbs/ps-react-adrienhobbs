@@ -1,14 +1,14 @@
 {
   "name": "ps-react-adrienhobbs",
-  "version": "0.1.0",
-  "main": "../lib/index.js",
+  "version": "0.1.1",
+  "main": "./lib/index.js",
   "engines": {
     "node": ">=4.0.0"
   },
   "author": {
     "name": "Adrien Hobbs",
     "email": "adrien.hobbs@gmail.com",
-    "url": "http://hobbs.codes",
+    "url": "http://hobbs.codes"
   },
   "files": [ "lib" ],
   "keywords": [
